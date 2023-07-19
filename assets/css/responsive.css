@@ -1,0 +1,100 @@
+/* For Mobile Divies  */
+
+@media screen and (max-width: 576px) {
+
+    /* header style starts here  */
+    body {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        flex-direction: column;
+    }
+
+    .right-content img {
+        width: 21rem;
+        padding: 10px;
+    }
+
+    /* gamer style starts here  */
+    .gamer-content {
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+
+    .gamer-content-left img {
+        width: 21rem;
+    }
+
+    /* online game style starts here  */
+
+    /* .online-game-content>h1{
+        font-family: .5rem;
+    } */
+
+    .games-showcase {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .single-game {
+        margin: 0 auto;
+    }
+
+    /* play instantly styles starts here  */
+
+    .play-instantly-content {
+        flex-direction: column;
+    }
+
+    .play-instantly-main-banner img {
+        width: 17rem;
+    }
+
+    .play-instantly-sub-banner img {
+        width: 10rem;
+        left: -44px;
+        bottom: -100px;
+    }
+
+    /* play games online style Starts here  */
+    .play-games-online-content {
+        flex-direction: column-reverse;
+    }
+
+    .play-games-online-main-banner img {
+        width: 17rem;
+    }
+
+    .play-games-online-sub-banner img {
+        width: 10rem;
+        bottom: -95px;
+        right: -44px;
+    }
+
+    /* Games Category Style Starts Here  */
+    .games-category-section{
+        margin-top: 150px;
+    }
+    .games-category-content{
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    /* footer style  */
+
+    .footer-menu{
+        flex-direction: column;
+        gap: 20px !important;
+    }
+}
