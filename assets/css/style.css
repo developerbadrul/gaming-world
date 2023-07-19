@@ -69,11 +69,11 @@ nav{
     margin: 0 auto;
 }
 
-.online-game-content h1{
+.online-game-content > h1{
     text-align: center;
 }
 
-.online-game-content  p{
+.online-game-content > p{
     text-align: center;
 }
 
@@ -85,3 +85,58 @@ nav{
 .games-showcase .single-game img{
     width: 16rem;
 }
+/* online game style Ends here  */
+
+/* play instantly styles starts here  */
+
+.play-instantly-content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.play-instantly-banner{
+    position: relative;
+}
+
+.play-instantly-main-banner img{
+    width: 23rem;
+}
+
+.play-instantly-sub-banner img{
+    position: absolute;
+    bottom: -145px;
+    left: -105px;
+    width: 15rem;
+}
+/* play instantly styles Ends here  */
+
+
+/* play games online style Starts here  */
+.play-games-online-section{
+    margin-top: 200px;
+}
+
+.play-games-online-content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.play-games-online-banner{
+    position: relative;
+}
+
+.play-games-online-main-banner img{
+    width: 23rem;
+}
+
+.play-games-online-sub-banner img{
+    width: 15rem;
+    position: absolute;
+    bottom: -165px;
+    right: -105px;
+}
+/* play games online style Starts here  */
