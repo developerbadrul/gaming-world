@@ -1,12 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
 /* header style starts here  */
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,20 +19,40 @@ nav{
     margin: 0 auto;
 }
 
-.logo a{
+.logo a {
     display: flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
     color: black;
+    font-size: 2rem;
 }
 
-.navigation{
+.navigation {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
-.banner-content{
+.navigation .link a {
+    text-decoration: none;
+}
+
+.follow-us {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 10px;
+}
+
+.follow-us img {
+    width: 1.5rem;
+}
+
+
+.banner-content {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -36,12 +60,22 @@ nav{
     justify-content: space-evenly;
 }
 
-.left-content{
+.left-content {
     background-image: url(../images/Group\ 14.png);
     background-position: 100%;
+    line-height: 2.2rem;
 }
 
-.right-content img{
+.left-content button{
+    cursor: pointer;
+}
+
+.left-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.right-content img {
     width: 32rem;
 }
 
@@ -49,105 +83,132 @@ nav{
 
 /* gamer style starts here  */
 
-.gamer-content{
+.gamer-content {
     width: 80%;
     margin: 0 auto;
     display: flex;
     align-items: center;
 }
 
-.gamer-content-left img{
+.gamer-content-left img {
     width: 40rem;
+}
+
+.gamer-content-right{
+    text-align: right;
 }
 
 /* gamer style ends here  */
 
 /* online game style starts here  */
 
-.online-game-content{
+.online-game-content {
     width: 80%;
     margin: 0 auto;
+    line-height: 1.5rem;
 }
 
-.online-game-content > h1{
+.online-game-content>h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.online-game-content>p {
     text-align: center;
 }
 
-.online-game-content > p{
-    text-align: center;
-}
-
-.games-showcase{
+.games-showcase {
     display: flex;
     gap: 20px;
 }
 
-.games-showcase .single-game img{
+.games-showcase .single-game img {
     width: 16rem;
 }
+
 /* online game style Ends here  */
 
 /* play instantly styles starts here  */
 
-.play-instantly-content{
+.play-instantly-section{
+    margin-top: 100px;
+}
+
+.play-instantly-left{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.play-instantly-content {
     width: 80%;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
-.play-instantly-banner{
+.play-instantly-banner {
     position: relative;
 }
 
-.play-instantly-main-banner img{
+.play-instantly-main-banner img {
     width: 23rem;
 }
 
-.play-instantly-sub-banner img{
+.play-instantly-sub-banner img {
     position: absolute;
     bottom: -145px;
     left: -105px;
     width: 15rem;
 }
+
 /* play instantly styles Ends here  */
 
 
 /* play games online style Starts here  */
-.play-games-online-section{
+.play-games-online-section {
     margin-top: 200px;
 }
 
-.play-games-online-content{
+.play-games-online-content {
     width: 80%;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
-.play-games-online-banner{
+.play-games-online-banner {
     position: relative;
 }
 
-.play-games-online-main-banner img{
+.play-games-online-main-banner img {
     width: 23rem;
 }
 
-.play-games-online-sub-banner img{
+.play-games-online-right{
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+.play-games-online-sub-banner img {
     width: 15rem;
     position: absolute;
     bottom: -165px;
     right: -105px;
 }
+
 /* play games online style Starts here  */
 
 /* games category style starts here   */
 
-.games-category-section{
-    margin-top  : 250px;
+.games-category-section {
+    margin-top: 250px;
 }
 
-.games-category-content{
+.games-category-content {
     width: 80%;
     margin: 20px auto;
     display: flex;
@@ -155,40 +216,52 @@ nav{
     /* gap: 5px; */
 }
 
-.category-style{
+.category-style {
     display: flex;
     align-items: center;
     gap: 5px;
-    padding: 5px;
+    padding: 5px 7px;
+    border-radius: 50px;
+    border: none;
+    font-size: .8rem;
+    font-weight: 600;
 }
 
-.category-style img{
-    width: 3rem;
+.category-style:hover{
+    color: rgb(252, 122, 143);
+    border: 1px solid rgb(252, 122, 143);
+    cursor: pointer;
 }
+
+.category-style img {
+    width: 2.5rem;
+}
+
 /* games category style ends here   */
 
 /* footer section starts here  */
 
-footer  {
+footer {
     background-color: #0B0223;
     padding: 50px;
-  }
-  
-  footer .logo-footer{
+}
+
+footer .logo-footer {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-  }
-  
-  footer .logo-footer img{
+}
+
+footer .logo-footer img {
     width: 60px;
-  }
-  footer .footer-title{
+}
+
+footer .footer-title {
     color: white;
-  }
-  
-  footer .footer-menu{
+}
+
+footer .footer-menu {
     display: flex;
     padding: 10px;
     justify-content: center;
@@ -196,15 +269,16 @@ footer  {
     align-items: center;
     gap: 60px;
     list-style: none;
-  }
-  footer .footer-menu a{
+}
+
+footer .footer-menu a {
     text-align: center;
     font-size: .8rem;
     color: white;
     text-decoration: none;
-  }
-  
-  footer .icon-footer{
+}
+
+footer .icon-footer {
     display: flex;
     gap: 20px;
     max-width: 70%;
@@ -212,27 +286,29 @@ footer  {
     align-items: center;
     margin: 10px auto;
     padding: 10px;
-  }
-  
-  footer .icon-footer img{
+}
+
+footer .icon-footer img {
     width: 30px;
     height: 30px;
-  }
-  
-  footer  .link-footer{
+}
+
+footer .link-footer {
     display: flex;
     align-items: center;
     gap: 20px;
     list-style: none;
     justify-content: center;
     padding-bottom: 10px;
-  }
-  footer .link-footer a{
+}
+
+footer .link-footer a {
     text-decoration: none;
     font-size: .6rem;
     color: rgb(199, 209, 218);
-  }
-  footer  .copyright-footer {
+}
+
+footer .copyright-footer {
     display: flex;
     margin: 0 auto;
     max-width: 50%;
@@ -240,5 +316,6 @@ footer  {
     align-content: center;
     font-size: .6rem;
     color: rgb(199, 209, 218);
-  }
-  /* footer section ends here here  */
+}
+
+/* footer section ends here here  */
